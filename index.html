@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="assets/Css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header-title">Conversor de Moedas</h1>
+  </header>
+
+  <main class="content-itens">
+    <form class="form">
+
+      <!-- Valor -->
+      <div class="form-group">
+        <label for="valor" class="form-label">
+          Informe um valor para a conversão
+        </label>
+
+        <input
+          type="number"
+          id="valor"
+          name="valor"
+          class="form-input"
+          placeholder="Apenas números (Ex: 10)"
+          required
+        >
+      </div>
+
+      <!-- De -->
+      <div class="form-group">
+        <label for="moeda-inicial" class="form-label">
+          Converter de:
+        </label>
+
+        <select
+          id="moeda-inicial"
+          name="moeda-inicial"
+          class="form-select"
+          required
+        >
+          <option value="">Selecione</option>
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD">Dólar Americano (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="GBP">Libra Esterlina (GBP)</option>
+          <option value="JPY">Iene (JPY)</option>
+          <option value="AUD">Dólar Australiano (AUD)</option>
+          <option value="CHF">Franco Suíço (CHF)</option>
+          <option value="CAD">Dólar Canadense (CAD)</option>
+          <option value="CNY">Renminbi / Yuan (CNY)</option>
+          <option value="ARS">Peso Argentino (ARS)</option>
+          <option value="TRY">Lira Turca (TRY)</option>
+        </select>
+      </div>
+
+      <!-- Para -->
+      <div class="form-group">
+        <label for="moeda-final" class="form-label">
+          Para:
+        </label>
+
+        <select
+          id="moeda-final"
+          name="moeda-final"
+          class="form-select"
+          required
+        >
+          <option value="">Selecione</option>
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD">Dólar Americano (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="GBP">Libra Esterlina (GBP)</option>
+          <option value="JPY">Iene (JPY)</option>
+          <option value="AUD">Dólar Australiano (AUD)</option>
+          <option value="CHF">Franco Suíço (CHF)</option>
+          <option value="CAD">Dólar Canadense (CAD)</option>
+          <option value="CNY">Renminbi / Yuan (CNY)</option>
+          <option value="ARS">Peso Argentino (ARS)</option>
+          <option value="TRY">Lira Turca (TRY)</option>
+        </select>
+      </div>
+
+      <!-- Botão -->
+      <div class="form-actions">
+        <button type="submit" class="form-button">
+          Converter
+        </button>
+      </div>
+
+    </form>
+
+     <div class="final-result">
+
+            <p id="result"></p>
+
+     </div>
+  </main>
+
+  <script src="assets/JavaScript/script.js"> </script>
+
+</body>
+</html>
